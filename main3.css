@@ -1,0 +1,395 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:
+}
+
+/*배경색*/
+body{
+	background:#CCCAA1;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+ul li{
+	list-style:none;
+}
+
+/*제목*/
+h1{
+	padding:15px 0 25px 0;
+	text-align:center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:2.2em;
+}
+
+a{
+    text-decoration-line:none;
+}
+
+/*아이콘 설정*/
+img.icon{
+	width: 48px;
+	height: 48px;
+	background:rgba(255, 255, 255, 0.4);
+	padding:14px;
+	border-radius:20%;
+	margin:30px auto;
+	display:block;
+	transition:all 0.8s;
+	-webkit-transition:all 0.8s;
+	-moz-transition:all 0.8s;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.1);
+	-webkit-box-shadow: 0 0 0 10px rgba(255,255,255,0.1);
+}
+
+/*글자색*/
+.nav li span{
+	text-align:center;
+	display:block;
+	padding-top:0px;
+	color:rgba(255, 255, 255, 1);
+	font-size:0.9em;
+	transition:padding-top 0.4s;
+	-webkit-transition:padding-top 0.4s;
+    font-size: 17px;
+}
+
+/*마우스 올렸을 때 글자 이동*/
+.nav li:hover span{
+	/*padding-top:0px;*/
+    font-size: 20px;
+    transition:font-size 0.4s;
+}
+
+/*마우스 올렸을 때 늘어날 길이
+.nav li:hover{
+	opacity:1;
+	height:190px;
+}
+*/
+
+/*마우스 올렸을 때 아이콘 배경색 변경*/
+.nav li:hover img.icon{
+	background:rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 0 10px rgba(255,255,255,0.8);
+	-webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0.8);
+}
+
+/*리스트 각자 칸 조정*/
+.nav li{
+	width:145px;
+	height:180px;
+	display:inline-block;
+	float:left;
+	cursor:pointer;
+	transition:all 0.4s;
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+}
+
+/*아이콘 기본 배경색*/
+.omv{
+	background:rgba(29, 179, 187, 0.836);
+}
+.putty{
+	background:rgba(190, 27, 122, 0.8);
+}
+.portainer{
+	background:rgba(29, 103, 187, 0.8);
+}
+.rauter{
+	background:rgba(196, 131, 28, 0.8);
+}
+.cloud{
+	background:rgba(31, 85, 185, 0.8);
+}
+.qbittorrent{
+	background:rgba(31, 184, 107, 0.8);
+}
+.jellyfin{
+	background:rgba(106, 34, 189, 0.8);
+}
+.netdata{
+	background:rgba(31, 187, 57, 0.8);
+}
+.archivebox{
+	background:rgba(199, 33, 33, 0.8);
+}
+
+/*마우스 올렸을 때 바뀔 색과 경계
+.nav li.omv:hover{
+	border-bottom:4px solid rgba(29, 179, 187, 0.836);
+}
+.nav li.putty:hover{
+	border-bottom:4px solid rgba(190, 27, 122, 0.8);
+}
+.nav li.portainer:hover{
+	border-bottom:4px solid rgba(29, 103, 187, 0.8);
+}
+.nav li.rauter:hover{
+	border-bottom:4px solid rgba(196, 131, 28, 0.8);
+}
+.nav li.cloud:hover{
+	border-bottom:4px solid rgba(31, 85, 185, 0.8);
+}
+.nav li.qbittorrent:hover{
+	border-bottom:4px solid rgba(31, 184, 107, 0.8);
+}
+.nav li.jellyfin:hover{
+	border-bottom:4px solid rgba(106, 34, 189, 0.8);
+}
+.nav li.netdata:hover{
+	border-bottom:4px solid rgba(31, 187, 57, 0.8);
+}
+.nav li.archivebox:hover{
+	border-bottom:4px solid rgba(199, 33, 33, 0.8);
+}
+*/
+
+/****************************반응형 웹 수정용*************************************/
+@media screen and (max-width:575.98px) {
+    /* 스마트폰 세로 (특수코드)*/
+
+    /*스마트폰 세로 전용*/
+    img{
+        float:left;
+    }
+    img.icon{
+        margin:10px 10px;
+    }
+    .nav li:hover{
+        height:100px;
+    }
+    /*마우스 올렸을 때 글자 이동*/
+    .nav li:hover span{
+        padding-top:30px;
+        font-size: 30px;
+        transition:all 0.4s;
+    }
+    .nav li span{
+        padding:35px;
+        font-size: 25px;
+    }
+    /*마우스 올렸을 때 바뀔 색과 경계*/
+    .nav li.omv:hover{
+        border-bottom:0px solid rgba(29, 179, 187, 0.836);
+    }
+    .nav li.putty:hover{
+        border-bottom:0px solid rgba(190, 27, 122, 0.8);
+    }
+    .nav li.portainer:hover{
+        border-bottom:0px solid rgba(29, 103, 187, 0.8);
+    }
+    .nav li.rauter:hover{
+        border-bottom:0px solid rgba(196, 131, 28, 0.8);
+    }
+    .nav li.cloud:hover{
+        border-bottom:0px solid rgba(31, 85, 185, 0.8);
+    }
+    .nav li.qbittorrent:hover{
+        border-bottom:0px solid rgba(31, 184, 107, 0.8);
+    }
+    .nav li.jellyfin:hover{
+        border-bottom:0px solid rgba(106, 34, 189, 0.8);
+    }
+    .nav li.netdata:hover{
+        border-bottom:0px solid rgba(31, 187, 57, 0.8);
+    }
+    .nav li.archivebox:hover{
+        border-bottom:0px solid rgba(199, 33, 33, 0.8);
+    }
+}
+
+/* 스마트폰 세로 */
+    /*전체 깍데기*/
+    #wrapper{
+        width: 450px;
+        margin: 60px auto;
+        background: #fff;
+        padding: 10px;
+        height: 1010px;
+        border:12px solid #DDE0CA;
+    }
+
+    /*리스트 들어갈 공간 크기*/
+    .nav{
+        overflow:hidden;
+        margin:0 auto;
+        width:400px;
+    }
+
+    /*리스트 각자 칸 조정*/
+    .nav li{
+        width:400px;
+        height:100px;
+        display:inline-block;
+        float:left;
+        cursor:pointer;
+        transition:all 0.4s;
+        -webkit-transition:all 0.4s;
+        -moz-transition:all 0.4s;
+    }
+
+@media screen and (min-width:576px) {
+/* 스마트폰 가로 */
+
+    /*전체 깍데기*/
+    #wrapper{
+        width: 526px;
+        margin: 60px auto;
+        background: #fff;
+        padding: 10px;
+        height: 670px;
+        border:12px solid #DDE0CA;
+    }
+
+    /*리스트 들어갈 공간 크기*/
+    .nav{
+        overflow:hidden;
+        margin:0 auto;
+        width:435px;
+    }
+
+    /*리스트 각자 칸 조정*/
+    .nav li{
+        width:145px;
+        height:180px;
+        display:inline-block;
+        float:left;
+        cursor:pointer;
+        transition:all 0.4s;
+        -webkit-transition:all 0.4s;
+        -moz-transition:all 0.4s;
+    }
+}
+    
+@media screen and (min-width:768px) {
+/* 타블렛 */
+
+    /*전체 깍데기*/
+    #wrapper{
+        width: 718px;
+        margin: 60px auto;
+        background: #fff;
+        padding: 10px;
+        height: 690px;
+        border:12px solid #DDE0CA;
+    }
+
+    /*리스트 들어갈 공간 크기*/
+    .nav{
+        overflow:hidden;
+        margin:0 auto;
+        width:580px;
+    }
+
+    /*리스트 각자 칸 조정*/
+    .nav li{
+        width:145px;
+        height:180px;
+        display:inline-block;
+        float:left;
+        cursor:pointer;
+        transition:all 0.4s;
+        -webkit-transition:all 0.4s;
+        -moz-transition:all 0.4s;
+    }
+}
+
+@media screen and (min-width:992px) {
+/* 데스크탑 */
+
+    /*전체 깍데기*/
+    #wrapper{
+        width: 942px;
+        margin: 60px auto;
+        background: #fff;
+        padding: 10px;
+        height: 480px;
+        border:12px solid #DDE0CA;
+    }
+
+    /*리스트 들어갈 공간 크기*/
+    .nav{
+        overflow:hidden;
+        margin:0 auto;
+        width:870px;
+    }
+
+    /*리스트 각자 칸 조정*/
+    .nav li{
+        width:145px;
+        height:180px;
+        display:inline-block;
+        float:left;
+        cursor:pointer;
+        transition:all 0.4s;
+        -webkit-transition:all 0.4s;
+        -moz-transition:all 0.4s;
+    }
+}
+    
+@media screen and (min-width:1200px) {
+/* 큰 데스크탑 */
+
+    /*전체 깍데기*/
+    #wrapper{
+        width: 1150px;
+        margin: 60px auto;
+        background: #fff;
+        padding: 10px;
+        height: 500px;
+        border:12px solid #DDE0CA;
+    }
+
+    /*리스트 들어갈 공간 크기*/
+    .nav{
+        overflow:hidden;
+        margin:0 auto;
+        width:1015px;
+    }
+
+    /*리스트 각자 칸 조정*/
+    .nav li{
+        width:145px;
+        height:180px;
+        display:inline-block;
+        float:left;
+        cursor:pointer;
+        transition:all 0.4s;
+        -webkit-transition:all 0.4s;
+        -moz-transition:all 0.4s;
+    }
+}
+
+@media screen and (min-width:1500px) {
+/* 더 큰 데스크탑 */
+
+    /*전체 깍데기*/
+    #wrapper{
+        width: 1450px;
+        margin: 60px auto;
+        background: #fff;
+        padding: 10px;
+        height: 330px;
+        border:12px solid #DDE0CA;
+    }
+
+    /*리스트 들어갈 공간 크기*/
+    .nav{
+        overflow:hidden;
+        margin:0 auto;
+        width:1305px;
+    }
+
+    /*리스트 각자 칸 조정*/
+    .nav li{
+        width:145px;
+        height:180px;
+        display:inline-block;
+        float:left;
+        cursor:pointer;
+        transition:all 0.4s;
+        -webkit-transition:all 0.4s;
+        -moz-transition:all 0.4s;
+    }
+}
