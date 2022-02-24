@@ -33,7 +33,7 @@ body, html {
   margin-top: 55px;
 }
 .page .searchforms .searchform-wrap{
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.9);
   max-width: 600px;
   min-width: 62px;
   width: calc(100% - 0px);
@@ -52,6 +52,7 @@ body, html {
   color: #333;
 }
 .page .searchforms .searchform-wrap .searchform .search{
+  background-color: rgba(255, 255, 255, 0);
   height: 35px;
   max-width: 630px;
   min-width: 62px;
@@ -63,14 +64,54 @@ body, html {
   border-radius: 22px;
 }
 .page .searchforms .searchform-wrap .searchform .submit{
+  background-color: rgba(255, 255, 255, 0);
   height: 37px;
   width: 55px;
 
   border: none;
   border: 0px 0px 0px 0px;
-  background-color: #FFF;
   color: rgb(85, 85, 85);
   border-radius: 22px;
+}
+
+.page .base64ende-main{
+  margin-top: 55px;
+}
+.page .base64ende-main .base64ende-wrap{
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  min-width: 62px;
+  width: calc(100% - 0px);
+  margin: 0 auto;
+  border-radius: 7px;
+
+  font-size: 16px; /* base 14px*/
+  margin-top: 10px;
+  text-align: center;
+  color: #333;
+}
+.page .base64ende-main .base64ende-wrap .base64ende-inout{
+  background-color: rgba(255, 255, 255, 0);
+  height: 35px;
+  max-width: 630px;
+  min-width: 62px;
+  width: calc((100% - 80px)/2 - 4px);
+
+  border: none;
+  border: 0px 0px 0px 0px;
+  outline: none;
+  border-radius: 22px;
+}
+.page .base64ende-main .base64ende-wrap .base64ende-btn{
+  background-color: rgba(255, 255, 255, 0);
+  height: 37px;
+  width: 55px;
+
+  border: none;
+  border: 0px 0px 0px 0px;
+  color: rgb(85, 85, 85);
+  border-radius: 22px;
+  padding-right: 0px;
 }
 
 .page .userinfo{
